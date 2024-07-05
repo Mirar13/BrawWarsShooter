@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1115cb6dde7949acb349528a59798475, type: 3}
+  m_Name: HealPercent
+  m_EditorClassIdentifier: 
+  DurationType: 0
+  DurationCharacteristicType: 0
+  ApplyMultiplyTimes: 0
+  Interval: 0
+  TargetCharacteristicTypes:
+  - health
+  OperationType: 0
+  Operation:
+    OperationStr: (health*(healValue/hundred))
+    OperationEntries:
+    - Key: healValue
+      isExecutorCharacteristic: 1
+      HasCharacteristicType: 1
+      CharacteristicType: healValue
+      UseMaxValue: 0
+      Value: 0
+    - Key: hundred
+      isExecutorCharacteristic: 0
+      HasCharacteristicType: 0
+      CharacteristicType: 
+      UseMaxValue: 0
+      Value: 100
+    - Key: health
+      isExecutorCharacteristic: 0
+      HasCharacteristicType: 1
+      CharacteristicType: health
+      UseMaxValue: 1
+      Value: 0
+  OperationPartsSerialized:
+  - Variables:
+    - Key: healValue
+      isExecutorCharacteristic: 1
+      HasCharacteristicType: 1
+      CharacteristicType: healValue
+      UseMaxValue: 0
+      Value: 0
+    - Key: hundred
+      isExecutorCharacteristic: 0
+      HasCharacteristicType: 0
+      CharacteristicType: 
+      UseMaxValue: 0
+      Value: 100
+    OperationType: 3
+    ConnectedParts: []
+    isConnectedPartLeft: 0
+    Result: 0.3
+  - Variables:
+    - Key: health
+      isExecutorCharacteristic: 0
+      HasCharacteristicType: 1
+      CharacteristicType: health
+      UseMaxValue: 1
+      Value: 0
+    OperationType: 2
+    ConnectedParts:
+    - Variables:
+      - Key: healValue
+        isExecutorCharacteristic: 1
+        HasCharacteristicType: 1
+        CharacteristicType: healValue
+        UseMaxValue: 0
+        Value: 0
+      - Key: hundred
+        isExecutorCharacteristic: 0
+        HasCharacteristicType: 0
+        CharacteristicType: 
+        UseMaxValue: 0
+        Value: 100
+      OperationType: 3
+      ConnectedParts: []
+      isConnectedPartLeft: 0
+      Result: 0.3
+    isConnectedPartLeft: 0
+    Result: 300

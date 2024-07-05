@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3dda45a0f0b47a8920eeb404bddf309, type: 3}
+  m_Name: TEMPLATE
+  m_EditorClassIdentifier: 
+  Characteristics:
+  - Key: health
+    BaseValue: 1000
+    MaxValue: 0
+  - Key: maxHealth
+    BaseValue: 1000
+    MaxValue: 0
+  - Key: damage
+    BaseValue: 17
+    MaxValue: 0
+  - Key: moveSpeed
+    BaseValue: 3.6
+    MaxValue: 0
+  - Key: attackRange
+    BaseValue: 16
+    MaxValue: 0
+  - Key: attackCooldown
+    BaseValue: 1
+    MaxValue: 0

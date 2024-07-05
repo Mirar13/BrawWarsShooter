@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3dda45a0f0b47a8920eeb404bddf309, type: 3}
+  m_Name: Tank_character
+  m_EditorClassIdentifier: 
+  Characteristics:
+  - Key: health
+    BaseValue: 1500
+    MaxValue: 1500
+  - Key: damage
+    BaseValue: 220
+    MaxValue: 220
+  - Key: moveSpeed
+    BaseValue: 3
+    MaxValue: 3
+  - Key: attackRange
+    BaseValue: 12
+    MaxValue: 12
+  - Key: attackCooldown
+    BaseValue: 1.2
+    MaxValue: 1.2

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1115cb6dde7949acb349528a59798475, type: 3}
+  m_Name: Damage
+  m_EditorClassIdentifier: 
+  DurationType: 0
+  DurationCharacteristicType: 0
+  ApplyMultiplyTimes: 0
+  Interval: 0
+  TargetCharacteristicTypes:
+  - health
+  OperationType: 1
+  Operation:
+    OperationStr: (damage)
+    OperationEntries:
+    - Key: damage
+      isExecutorCharacteristic: 1
+      HasCharacteristicType: 1
+      CharacteristicType: damage
+      Value: 0
+  OperationPartsSerialized:
+  - Variables:
+    - Key: damage
+      isExecutorCharacteristic: 1
+      HasCharacteristicType: 1
+      CharacteristicType: damage
+      Value: 0
+    OperationType: 0
+    ConnectedParts: []
+    isConnectedPartLeft: 0
+    Result: 0
